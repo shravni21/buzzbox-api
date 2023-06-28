@@ -14,9 +14,9 @@ const userIds = [
 export const users = [
     {
         _id: userIds[0],
-        firstName: "test",
-        lastName: "me",
-        email: "aaaaaaa@gmail.com",
+        firstName: "John",
+        lastName: "Doe",
+        email: "johndoe@example.com",
         password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
         picturePath: "p11.jpeg",
         friends: [],
@@ -31,8 +31,8 @@ export const users = [
     {
         _id: userIds[1],
         firstName: "Steve",
-        lastName: "Ralph",
-        email: "thataaa@gmail.com",
+        lastName: "Smith",
+        email: "stevesmith@example.com",
         password: "$!FEAS@!O)_IDJda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
         picturePath: "p3.jpeg",
         friends: [],
@@ -46,9 +46,9 @@ export const users = [
     },
     {
         _id: userIds[2],
-        firstName: "Some",
-        lastName: "Guy",
-        email: "someguy@gmail.com",
+        firstName: "Sam",
+        lastName: "Johnson",
+        email: "samjohnson@example.com",
         password: "da39a3ee5e6b4b0d3255bfef95601890afd80709",
         picturePath: "p4.jpeg",
         friends: [],
@@ -62,9 +62,9 @@ export const users = [
     },
     {
         _id: userIds[3],
-        firstName: "Whatcha",
-        lastName: "Doing",
-        email: "whatchadoing@gmail.com",
+        firstName: "David",
+        lastName: "Brown",
+        email: "davidbrown@example.com",
         password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
         picturePath: "p6.jpeg",
         friends: [],
@@ -79,8 +79,8 @@ export const users = [
     {
         _id: userIds[4],
         firstName: "Jane",
-        lastName: "Doe",
-        email: "janedoe@gmail.com",
+        lastName: "Williams",
+        email: "janewilliams@example.com",
         password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
         picturePath: "p5.jpeg",
         friends: [],
@@ -94,9 +94,9 @@ export const users = [
     },
     {
         _id: userIds[5],
-        firstName: "Harvey",
+        firstName: "Harry",
         lastName: "Dunn",
-        email: "harveydunn@gmail.com",
+        email: "harrydunn@example.com",
         password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
         picturePath: "p7.jpeg",
         friends: [],
@@ -110,9 +110,9 @@ export const users = [
     },
     {
         _id: userIds[6],
-        firstName: "Carly",
+        firstName: "Caroline",
         lastName: "Vowel",
-        email: "carlyvowel@gmail.com",
+        email: "carolinevowel@example.com",
         password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
         picturePath: "p8.jpeg",
         friends: [],
@@ -127,8 +127,8 @@ export const users = [
     {
         _id: userIds[7],
         firstName: "Jessica",
-        lastName: "Dunn",
-        email: "jessicadunn@gmail.com",
+        lastName: "Green",
+        email: "jessicagreen@example.com",
         password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
         picturePath: "p9.jpeg",
         friends: [],
@@ -139,8 +139,9 @@ export const users = [
         createdAt: 1369908044,
         updatedAt: 1359322268,
         __v: 0,
-    },
-];
+    }
+]
+
 
 export const posts = [
     {
@@ -149,7 +150,7 @@ export const posts = [
         firstName: "Steve",
         lastName: "Ralph",
         location: "New York, CA",
-        description: "Some really long random description",
+        description: "Starting the day right with a refreshing glass of sunshine and a delicious breakfast spread! 🍊☀️ Rise and shine with some tangy orange juice and a mouthwatering breakfast feast. Fuel up and embrace the vibrant flavors of a perfect morning! 😋🥐 #BreakfastDelights #FreshStart #OrangeJuiceLover #MorningFuel #DeliciousBeginnings",
         picturePath: "post1.jpeg",
         userPicturePath: "p3.jpeg",
         likes: new Map([
@@ -159,32 +160,11 @@ export const posts = [
             [userIds[4], true],
         ]),
         comments: [
-            "random comment",
-            "another random comment",
-            "yet another random comment",
-        ],
-    },
-    {
-        _id: new mongoose.Types.ObjectId(),
-        userId: userIds[3],
-        firstName: "Whatcha",
-        lastName: "Doing",
-        location: "Korea, CA",
-        description:
-            "Another really long random description. This one is longer than the previous one.",
-        picturePath: "post2.jpeg",
-        userPicturePath: "p6.jpeg",
-        likes: new Map([
-            [userIds[7], true],
-            [userIds[4], true],
-            [userIds[1], true],
-            [userIds[2], true],
-        ]),
-        comments: [
-            "one more random comment",
-            "and another random comment",
-            "no more random comments",
-            "I lied, one more random comment",
+            "Wow, this photo is giving me serious breakfast goals! 😍",
+            "I can almost taste the deliciousness through the screen! 🤤",
+            "Breakfast is my favorite meal of the day, and this spread looks absolutely incredible! 😋",
+            " Can't wait to try recreating it!",
+            "😍 Sending major foodie vibes your way!",
         ],
     },
     {
@@ -194,7 +174,7 @@ export const posts = [
         lastName: "Doe",
         location: "Utah, CA",
         description:
-            "This is the last really long random description. This one is longer than the previous one.",
+            "Embracing the joy of laughter amidst the crowd. Happiness is contagious, and I'm spreading the good vibes wherever I go! 😄❤️ #LaughOutLoud #GoodTimes #JoyfulMoments",
         picturePath: "post3.jpeg",
         userPicturePath: "p5.jpeg",
         likes: new Map([
@@ -204,11 +184,10 @@ export const posts = [
             [userIds[5], true],
         ]),
         comments: [
-            "one more random comment",
-            "I lied, one more random comment",
-            "I lied again, one more random comment",
-            "Why am I doing this?",
-            "I'm bored",
+            "Your laughter is infectious! 😊",
+            "Keep spreading the happiness, beautiful! 🌟",
+            "This picture captures the essence of pure joy!❤️",
+            "You have such a contagious energy. ✨",
         ],
     },
     {
@@ -218,8 +197,8 @@ export const posts = [
         lastName: "Dunn",
         location: "Los Angeles, CA",
         description:
-            "This is the last really long random description. This one is longer than the previous one. Man I'm bored. I'm going to keep typing until I run out of things to say.",
-        picturePath: "post4.jpeg",
+            "Celebrating the beginning of a beautiful journey together. ❤️✨ #WeddingBliss",
+        picturePath: "post8.jpeg",
         userPicturePath: "p7.jpeg",
         likes: new Map([
             [userIds[1], true],
@@ -228,11 +207,11 @@ export const posts = [
         ]),
         comments: [
             "I lied again, one more random comment",
-            "Why am I doing this?",
-            "I'm bored",
-            "I'm still bored",
-            "All I want to do is play video games",
-            "I'm going to play video games",
+            "Wishing the newlyweds a lifetime of love, unity, and countless blessings. 💒✨",
+            "May your love story be filled with endless chapters of bliss. ✨💍",
+            "Wow! The decor, the ambiance, and the smiles on everyone's faces...everything is just magical.",
+            "The love in this photo is palpable!",
+            "Congrats, lovebirds! 🎊❤️",
         ],
     },
     {
@@ -242,7 +221,7 @@ export const posts = [
         lastName: "Vowel",
         location: "Chicago, IL",
         description:
-            "Just a short description. I'm tired of typing. I'm going to play video games now.",
+            "Sparkling into the New Year with joy, excitement, and a burst of colorful fireworks! 🎆✨ #HappyNewYear #FireworksFrenzy",
         picturePath: "post5.jpeg",
         userPicturePath: "p8.jpeg",
         likes: new Map([
@@ -252,11 +231,11 @@ export const posts = [
             [userIds[7], true],
         ]),
         comments: [
-            "I lied again, one more random comment",
-            "Why am I doing this?",
-            "Man I'm bored",
-            "What should I do?",
-            "I'm going to play video games",
+            "Fireworks and new beginnings, what a perfect combination!",
+            "May the New Year bring you fireworks of success, happiness, and endless possibilities! 💥✨",
+            "Let the fireworks light up your path to a remarkable journey. Happy New Year! 🥂🎇",
+            "Firecrackers in the sky, a symbol of celebration and hope. May your year be filled with joy and good fortune! 🎆💫",
+            "Wishing you a year filled with sparkling moments and unforgettable memories! 🎇✨",
         ],
     },
     {
@@ -266,20 +245,20 @@ export const posts = [
         lastName: "Dunn",
         location: "Washington, DC",
         description:
-            "For the last time, I'm going to play video games now. I'm tired of typing. I'm going to play video games now.",
+            "Embracing the golden rays of sunlight, she radiates beauty and grace. ✨☀️",
         picturePath: "post6.jpeg",
         userPicturePath: "p9.jpeg",
         likes: new Map([
             [userIds[1], true],
             [userIds[2], true],
         ]),
-
         comments: [
-            "Can I play video games now?",
-            "No let's actually study",
-            "Never mind, I'm going to play video games",
-            "Stop it.",
-            "Michael, stop it.",
+            "The sun's golden embrace is simply enchanting! ☀️✨",
+            "Captured in the warm embrace of sunlight, you radiate pure beauty! ✨",
+            "Basking in the sun's gentle glow, you shine brighter than ever! ☀️✨",
+            "Aesthetic perfection in the golden hour!",
+            "The sunlight gracefully dances upon your face, creating a mesmerizing aesthetic that takes my breath away!✨",
         ],
-    },
+    }
+
 ];
