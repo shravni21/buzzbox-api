@@ -23,6 +23,6 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Shravni Wakde",
   "license": "ISC"
 }
